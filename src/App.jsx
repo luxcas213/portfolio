@@ -1,9 +1,33 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
+import Home from './Home';
+import Projects from './Projects';
+import Skills from './Skills';
+import Contact from './Contact';
+import Header from './Header';
+import './App.css';
+import English from './elements/translations/en.json';
+import Spanish from './elements/translations/es.json';
+
+const langs = {
+   en: English,
+   es: Spanish
+};
 
 function App() {
    const [init, setInit] = useState(false);
+   const [page, setPage] = useState('Home');
+   const [actualLang, setActualLang] = useState('es');
+   const [l, setL] = useState(langs[actualLang]);
+
+   const pages = {
+      Home: <Home lang={l} />,
+      Projects: <Projects lang={l} />,
+      Skills: <Skills lang={l} />,
+      Contact: <Contact lang={l} />
+   };
+
    useEffect(() => {
       initParticlesEngine(async (engine) => {
          await loadSlim(engine);
@@ -11,6 +35,8 @@ function App() {
          setInit(true);
       });
    }, []);
+
+   useEffect(() => setL(langs[actualLang]), [actualLang]);
 
    const particlesLoaded = (container) => {
       console.log('Particles Loaded:', container);
@@ -24,7 +50,7 @@ function App() {
          fpsLimit: 40,
          interactivity: {
             events: {
-               onClick: { enable: true, mode: 'push' },
+               // onClick: { enable: true, mode: 'push' },
                onHover: { enable: true, mode: 'repulse' }
             },
             modes: {
@@ -75,13 +101,27 @@ function App() {
       []
    );
 
+   // ---- Change page ----
+   const changePage = (page) => setPage(page);
+
+   const setLang = (lang) => setActualLang(lang);
+
    return (
       <div className='App'>
+         <Header
+            changePage={changePage}
+            changeLang={setLang}
+            l={actualLang}
+            lang={l}
+         />
+         <main>{pages[page]}</main>
          {init && (
             <Particles
                id='tsparticles'
                options={options}
                particlesLoaded={particlesLoaded}
+               style={{ zIndex: -1 }}
+               className='particles'
             />
          )}
       </div>

@@ -1,0 +1,28 @@
+{
+   "header": {
+      "home": "Inicio",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "contact": "Contacto"
+   },
+   "home": {
+      "greeting": "Hola",
+      "welcomeMessage": "Soy <span style='color: #f3023d'>Uriel</span> Stolar",
+      "shortDesc": "Aca Uriel Stolar Full Stack Web Developer y programador Back-end ubicado en Argentina.",
+      "cv": "Descargar CV"
+   },
+   "skills": {
+      "featured": "Destacadas",
+      "languages": "Lenguajes",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "others": "Otros"
+   },
+   "contact": {
+      "contactMe": "Contactame",
+      "name": "Nombre",
+      "email": "Email",
+      "promptMessage": "Escribe un proyecto interesante.",
+      "sendButton": "Enviar"
+   }
+}

@@ -1,0 +1,28 @@
+{
+   "header": {
+      "home": "Home",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact"
+   },
+   "home": {
+      "greeting": "Hello",
+      "welcomeMessage": "I'm <span style='color: #f3023d'>Uriel</span> Stolar",
+      "shortDesc": "This is Uriel Stolar Full Stack web developer and Back-end programmer located in Argentina.",
+      "cv": "Download CV"
+   },
+   "skills": {
+      "featured": "Featured",
+      "languages": "Languages",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "others": "Others"
+   },
+   "contact": {
+      "contactMe": "Contact me",
+      "name": "Name",
+      "email": "Email",
+      "promptMessage": "Enter something funny.",
+      "sendButton": "Submit"
+   }
+}
