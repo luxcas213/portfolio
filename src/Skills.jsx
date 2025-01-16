@@ -17,13 +17,13 @@ function Skills({ lang }) {
          <h1>{lang.skills.featured}</h1>
          <div style={myStyle}>
             <Skill name={'Python'} icon={'AiOutlinePython'} />
-            <Skill name={'Node.js'} icon={'FaNodeJs'} />
+            <Skill name={'Django'} icon={'TbBrandDjango'} />
          </div>
          <h1>{lang.skills.languages}</h1>
          <div style={myStyle}>
             <Skill name={'C++'} icon={'SiCplusplus'} />
+            <Skill name={'Python'} icon={'AiOutlinePython'} />
             <Skill name={'C sharp'} icon={'TbBrandCSharp'} />
-            <Skill name={'TypeScript'} icon={'Typescript01Icon'} />
             <Skill name={'JavaScript'} icon={'JavaScriptIcon'} />
          </div>
          <h1>{lang.skills.frontend}</h1>
@@ -31,23 +31,22 @@ function Skills({ lang }) {
             <Skill name={'React'} icon={'ReactIcon'} />
             <Skill name={'HTML'} icon={'Html5Icon'} />
             <Skill name={'CSS'} icon={'FaCss3'} />
-            <Skill name={'Bootstrap'} icon={'BootstrapIcon'} />
          </div>
          <h1>{lang.skills.backend}</h1>
          <div style={myStyle}>
             <Skill name={'Python'} icon={'AiOutlinePython'} />
             <Skill name={'Node.js'} icon={'FaNodeJs'} />
-            <Skill name={'Mongo'} icon={'TbBrandMongodb'} />
+            <Skill name={'Django'} icon={'TbBrandDjango'} />
             <Skill name={'SQL'} icon={'TbSql'} />
+            <Skill name={'Sequaqlize'} icon={'SiSequelize'} />
          </div>
          <h1>{lang.skills.others}</h1>
          <div style={myStyle}>
             <Skill name={'Github'} icon={'GithubIcon'} />
             <Skill name={'Git'} icon={'GitBranchIcon'} />
-            <Skill name={'React Native'} icon={'TbBrandReactNative'} />
-            <Skill name={'Linux'} icon={'FaLinux'} />
-            <Skill name={'Android Studio'} icon={'AndroidIcon'} />
-            <Skill name={'Arduino'} icon={'SiArduino'} />
+            <Skill name={'Unity'} icon={'FaUnity'} />
+            <Skill name={'Tensorflow'} icon={'SiTensorflow'} />
+            <Skill name={'Neural Networks'} icon={'NeuralNetworkIcon'} />
          </div>
       </div>
    );

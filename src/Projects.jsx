@@ -7,24 +7,19 @@ const React = require('react');
 function Projects() {
    const STARTUPS = [
       {
-         name: 'Bot de whatsapp Bnet',
-         date: '01.02.2024',
-         desc: '## Bot de whatsapp para manejo de transacciones.\nEl bot estaba diseñado para clientes. Los mismos se registraban y mediante una serie de mensajes podían acceder a su historial de transacciones tanto como a sus acreditadas. \n\nMás información: \n[More info +](https://checker-gate-f5e.notion.site/Chatbot-WhatsApp-documentaci-n-ab772bc256724b2d899e872518b534c7)'
-      },
-      {
-         name: 'Startup Xprience',
-         date: '2024 (year project)',
-         desc: '### Resumen del Proyecto.\nXprience simplifica la planificación de salidas, ofreciendo una plataforma integral para elegir actividades, reservar transporte y gestionar costos. Nuestra misión es liberar a los usuarios del estrés organizativo para maximizar su disfrute en cada experiencia.'
-      },
-      {
          name: 'Startup Imaginify',
          date: '06.09.2024',
-         desc: '## Imaginify startup.\nCreate, download, and use high-quality transparent images effortlessly. No fees, no hassle – just pure creativity at your fingertips! Try it out now and let your imagination flow 💡. [Page](https://imaginifyapp.com/) (NO LONGER AVAILABLE)'
+         desc: '## Imaginify Startup.\nEffortlessly create, download, and use high-quality transparent images. No fees, no hassle – just pure creativity at your fingertips! Start now and let your imagination flow 💡✨. (Page NO LONGER AVAILABLE) .'
       },
-      {
-         name: 'Bot de whatsapp para manejo de transferencias',
-         date: '12.12.2024',
-         desc: 'En proceso... No hay información disponible ⌛.'
+{
+         name: 'Startup 223D',
+         date: '03.02.2024',
+         desc: 'A web platform that generates 3D objects in STL format based on a 2D blueprint 🖼️➡️🛠️.'
+      },
+{
+         name: 'CALL of TIC',
+         date: '10.02.2024',
+         desc: 'A multiplayer FPS shooter game where you join a server and enter a deathmatch, utilizing various weapons and abilities 🔫⚔️💥.'
       }
    ];
    const [showModal, setShowModal] = useState(0);
