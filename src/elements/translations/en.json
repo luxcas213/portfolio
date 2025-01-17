@@ -7,8 +7,8 @@
    },
    "home": {
       "greeting": "Hello",
-      "welcomeMessage": "I'm <span style='color: #f3023d'>Uriel</span> Stolar",
-      "shortDesc": "This is Uriel Stolar Full Stack web developer and Back-end programmer located in Argentina.",
+      "welcomeMessage": "I'm <span style='color: #f3023d'>Lucas</span> Garbate",
+      "shortDesc": "This is Lucas Garbate Full Stack web developer and Back-end programmer located in Argentina.",
       "cv": "Download CV"
    },
    "skills": {

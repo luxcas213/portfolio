@@ -24,7 +24,7 @@ function Home({ lang }) {
                {lang.home.cv}
             </a>
          </div>
-         <img src='./me.png' className='rounded' alt='me' />
+         <img src='./me.jpg' className='rounded' alt='me' />
       </div>
    );
 }
