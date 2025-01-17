@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 function Contact({ lang }) {
    emailjs.init({
-      publicKey: 'moyNKkUgG14HdyXn2',
+      publicKey: 'CCbT47O0vzlsTN-xl',
       blockHeadless: true,
       limitRate: {
          id: 'app',
@@ -14,7 +14,7 @@ function Contact({ lang }) {
    const sendMail = (e) => {
       e.preventDefault();
       const formData = new FormData(e.target);
-      emailjs.send('service_4ccm64p', 'template_kjo5h2r', {
+      emailjs.send('service_wuj7t9c', 'template_qupfdbs', {
          email: formData.get('email'),
          name: formData.get('name'),
          message: formData.get('text')
