@@ -14,7 +14,7 @@ function Contact({ lang }) {
    const sendMail = (e) => {
       e.preventDefault();
       const formData = new FormData(e.target);
-      emailjs.send('service_wuj7t9c', 'template_qupfdbs', {
+      emailjs.send('service_cj21j0e', 'template_dx7tioj', {
          email: formData.get('email'),
          name: formData.get('name'),
          message: formData.get('text')
